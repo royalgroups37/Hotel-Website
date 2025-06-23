@@ -36,18 +36,12 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="text-blue-600 font-medium w-full">
+    <header className=" font-medium w-full">
       {/* Top Section */}
-      <div className="bg-white py-4">
-        <div className="mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-          <div className="text-xl mb-2 md:mb-0 md:text-left">Logo</div>
-          <div className="font-bold">School Name</div>
-          <p className="font-bold">Admissions Open 2025 - 2026</p>
-        </div>
-      </div>
+   
 
       {/* Navigation */}
-      <nav className="bg-sky-400 text-white w-full">
+      <nav className=" text-black w-full">
         <div className="mx-auto px-4">
           {/* Mobile toggle button */}
           <div className="md:hidden flex justify-between items-center py-3">
@@ -81,28 +75,21 @@ const Header = () => {
             } md:flex flex-wrap justify-around items-center w-full py-3 text-sm md:text-base text-center`}
           >
             <li className="cursor-pointer py-2 md:py-0">
-              <Link href="/Home">HOME</Link>
+              <Link href="/Home">LOGO</Link>
             </li>
 
             <AcademicsDropdown />
 
             <li className="relative group cursor-pointer py-2 md:py-0">
-              <span>ABOUT US</span>
-              <div className="absolute left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none hidden group-hover:block bg-white text-black mt-2 p-2 rounded shadow z-10 min-w-[200px] text-left">
-                <Link href="/Faculty" className="block px-4 py-2 hover:bg-gray-100">
-                  Our Faculty
-                </Link>
-                <Link href="/About" className="block px-4 py-2 hover:bg-gray-100">
-                  About Our School
-                </Link>
-              </div>
+              <span>LOGO</span>
+             
             </li>
 
             <li className="cursor-pointer py-2 md:py-0">
-              <Link href="/Infracstructure">INFRASTRUCTURE AND FACILITIES</Link>
+              <Link href="/Infracstructure">BOOKING HISTORY</Link>
             </li>
             <li className="cursor-pointer py-2 md:py-0">
-              <Link href="/Admissions">ADMISSIONS</Link>
+              <Link href="/Admissions">FAVORITES</Link>
             </li>
           </ul>
         </div>
