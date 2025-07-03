@@ -15,17 +15,17 @@ export default function Home() {
     {
       title: 'Stay 10 nights, get 1 reward night',
       cta: 'Search stays',
-      image: '/image1.png',
+      image: '/Image1.png',
     },
     {
       title: 'Plans change. Book a stay with flexibility to cancel at any time',
       cta: 'Book now',
-      image: '/image2.png',
+      image: '/Image2.png',
     },
     {
       title: 'Compare hotels side-by-side to find the right one for you',
       cta: 'Compare hotels',
-      image: '/image3.png',
+      image: '/Image3.png',
     },
   ];
   return (

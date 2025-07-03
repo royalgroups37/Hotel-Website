@@ -8,7 +8,7 @@ const hotels = Array(8).fill({
   rating: 4.9,
   reviews: 122,
   discount: '-10% today',
-  image: '/image.png',
+  image: '/Image.png',
 });
 
 const FeaturedPlaces = () => (
