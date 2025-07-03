@@ -29,53 +29,42 @@ const categories = [
 
 
 const BrowseTypes = () => (
-    <>
-      <section className="max-w-screen-xl mx-auto ">
-    <p className="text-[22.3125px] font-semibold text-left text-[#2c2c2c] mb-4">
-      Browse by property type
-    </p>
+  <>
+    <section className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p className="text-2xl font-semibold text-[#2c2c2c] mb-6">
+        Browse by property type
+      </p>
 
-    <div className="flex flex-wrap gap-6">
-      {categories.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col justify-center items-start w-[279px] pr-4"
-        >
-          <div className="flex flex-col justify-center items-start w-full h-[246.39px]">
-            <div className="flex flex-col justify-start items-start w-full gap-1">
-              <div className="w-[263px] h-[210.39px] relative">
-                <div className="w-[263px] h-[210.39px] overflow-hidden rounded-lg">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="pt-2">
-                <p className="text-[14.625px] font-bold text-left text-[#2c2c2c]">
-                  {item.name}
-                </p>
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {categories.map((item, index) => (
+          <div key={index} className="flex flex-col w-full">
+            <div className="w-full aspect-[4/3] overflow-hidden rounded-lg">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+              />
             </div>
+            <p className="pt-3 text-sm font-bold text-[#2c2c2c] text-left">
+              {item.name}
+            </p>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
 
-    {/* ✅ Responsive Full-Width Image */}
-    
-  </section>
-  <div className="mt-8">
+    {/* Responsive Full-Width Banner */}
+    <div className="mt-10 px-4 sm:px-6 lg:px-8">
       <img
         src="/Frame50.jpg"
         alt="Promotional banner"
         className="w-full h-auto object-cover rounded-lg"
       />
     </div>
-    </>
-
+  </>
 );
 
-
 export default BrowseTypes;
+
+
+

@@ -71,49 +71,47 @@ const LocationOverview = () => {
                     className="w-full lg:w-[45%] h-[250px] lg:h-[350px] object-cover"
                 />
             </div>
+<div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-6 items-center mt-10">
+  {/* Text block */}
+  <div className="w-full lg:w-1/4 space-y-6">
+    <div className="space-y-3">
+      <p className="text-3xl sm:text-4xl font-semibold text-[#2c2c2c]">👋 About us</p>
+      <p className="text-base text-[#757272]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      </p>
+    </div>
+  </div>
 
-            <div className=" mx-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-6 items-center mt-10">
-                {/* Text block */}
-                <div className="w-full lg:w-1/4 space-y-6">
-                    <div className="space-y-3">
-                        <p className="text-3xl sm:text-4xl font-semibold text-[#2c2c2c]">👋 About us</p>
-                        <p className="text-base text-[#757272]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
-                    </div>
+  {/* Image row - scrollable on mobile */}
+  <div className="w-full lg:w-2/4 overflow-x-auto flex justify-start lg:justify-end items-center flex-grow relative gap-2.5 rounded-xl">
+    <img
+      src="rectangle-4.png"
+      className="flex-grow-0 flex-shrink-0 w-[120px] h-[227px] rounded-3xl object-cover"
+      style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
+    />
+    <img
+      src="rectangle-11.png"
+      className="flex-grow-0 flex-shrink-0 w-[140px] h-[277px] rounded-3xl object-cover"
+      style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
+    />
+    <img
+      src="rectangle-8.png"
+      className="flex-grow-0 flex-shrink-0 w-[165px] h-[319px] rounded-3xl object-cover"
+      style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
+    />
+    <img
+      src="rectangle-7.png"
+      className="flex-grow-0 flex-shrink-0 w-[140px] h-[277px] rounded-3xl object-cover"
+      style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
+    />
+    <img
+      src="rectangle-12.png"
+      className="flex-grow-0 flex-shrink-0 w-[120px] h-[227px] rounded-3xl object-cover"
+      style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
+    />
+  </div>
+</div>
 
-
-                </div>
-
-                {/* Image */}
-                <div className="w-full lg:w-2/4  flex justify-end items-center flex-grow relative gap-2.5 rounded-xl">
-                    <img
-                        src="rectangle-4.png"
-                        className="flex-grow-0 flex-shrink-0 w-[120px] h-[227px] rounded-3xl object-cover"
-                        style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
-                    />
-                    <img
-                        src="rectangle-11.png"
-                        className="flex-grow-0 flex-shrink-0 w-[140px] h-[277px] rounded-3xl object-cover"
-                        style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
-                    />
-                    <img
-                        src="rectangle-8.png"
-                        className="flex-grow-0 flex-shrink-0 w-[165px] h-[319px] rounded-3xl object-cover"
-                        style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
-                    />
-                    <img
-                        src="rectangle-7.png"
-                        className="flex-grow-0 flex-shrink-0 w-[140px] h-[277px] rounded-3xl object-cover"
-                        style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
-                    />
-                    <img
-                        src="rectangle-12.png"
-                        className="flex-grow-0 flex-shrink-0 w-[120px] h-[227px] rounded-3xl object-cover"
-                        style={{ boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -2px rgba(0,0,0,0.05)" }}
-                    />
-                </div>
-            </div>
         </div>
     );
 };
